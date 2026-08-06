@@ -1,10 +1,13 @@
+const byteUnitInput = document.querySelector("byte-input");
+const megabyteUnitInput = document.querySelector("megabyte-input");
+const gigabyteUnitInput = document.querySelector("gigabyte-input");
+
 const convertBytes = (bytes) => ({
   MB: (bytes / (1000 * 1000)).toFixed(2),
   GB: (bytes / (1000 * 1000 * 1000)).toFixed(2),
 });
 
 function showResult() {
-  const input = prompt("enter byte");
   const bytes = Number(input);
 
   if (isNaN(bytes) || bytes < 0) {
@@ -17,5 +20,3 @@ function showResult() {
 }
 
 showResult();
-
-
