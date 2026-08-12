@@ -1,6 +1,6 @@
 const byteUnitInput = document.querySelector("byte-input");
-const megabyteUnitInput = document.querySelector("megabyte-input");
-const gigabyteUnitInput = document.querySelector("gigabyte-input");
+const megabyteUnitInput = document.querySelector("megabyteInput");
+const gigabyteUnitInput = document.querySelector("gigabyteInput");
 
 const convertBytes = (bytes) => ({
   MB: (bytes / (1000 * 1000)).toFixed(2),
@@ -8,15 +8,14 @@ const convertBytes = (bytes) => ({
 });
 
 function showResult() {
-  const bytes = Number(input);
 
-  if (isNaN(bytes) || bytes < 0) {
+  if (isNaN(byteUnitInput) || byteUnitInput < 0) {
     console.log("please enter a valid number");
     return;
   }
   const result = convertBytes(bytes);
-  console.log(result.MB + " mb");
-  console.log(result.GB + " gb");
+  megabyteInput.textContent(result.MB);
+  gigabyteInput.textContent(result.GB);
 }
 
 showResult();
