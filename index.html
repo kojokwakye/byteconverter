@@ -8,7 +8,15 @@
     <title>byte converter</title>
   </head>
   <body>
-    <h1>byte converter</h1>
+    <div class="menubtn">
+      <a href="#bytepage" class="header1 active" id="bytetitle"
+        >byte converter</a
+      >
+      <!-- /
+      <a href="#minutespage" class="header1" id="minutetitle"
+        >minutes converter</a
+      > -->
+    </div>
 
     <div class="form-table">
       <form action="">
@@ -89,7 +97,7 @@
         <div class="row total-row">
           <span class="total-label">Total GB</span>
           <input id="total-gb" type="number" class="unit" />
-          <button class="refresh" onClick="history.go(0);">refresh</button>
+          <button class="refresh"><a class="refresh" href="#" onclick="location.href = document.referrer; return false;">refresh</a> </a> </button>
         </div>
       </form>
     </div>

@@ -16,13 +16,32 @@ body {
   flex-direction: column;
 }
 
-h1 {
+.header1 {
   text-align: center;
-  font-size: 2rem;
+  /* font-size: 1.7rem; */
+  font-weight: bold;
   margin-bottom: 24px;
+  text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #017eb4;
+}
+.menubtn {
+  font-size: 1.7rem;
+  margin-bottom: 24px;
+}
+
+.menubtn a:hover {
+  font-size: 1.7rem;
+  color: #5ea8d23b;
+  cursor: pointer;
+  background-size: 100% 100%;
+  /* animation: spring 300ms ease-out; */
+  text-shadow: 0 -1px 0 #21a3ca;
+}
+
+.menubtn a:active {
+  color: #0000003b;
 }
 
 .form-table {
@@ -71,7 +90,7 @@ span.total-label {
 }
 
 button.refresh {
-  color: #ffe;
+  /* color: #ffe; */
   /* font-size: 0.85px; */
   font-weight: bold;
   text-transform: uppercase;
@@ -81,6 +100,11 @@ button.refresh {
   background-color: #484848;
   border: none;
   cursor: pointer;
+}
+
+a.refresh {
+  color: #ffe;
+  text-decoration: none;
 }
 .unit {
   /* width: 140px; */
