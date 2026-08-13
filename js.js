@@ -1,21 +1,21 @@
-const byteUnitInput = document.querySelector("byte-input");
-const megabyteUnitInput = document.querySelector("megabyteInput");
-const gigabyteUnitInput = document.querySelector("gigabyteInput");
+const byteUnitInput = document.getElementById("byte");
+const megabyteUnitInput = document.getElementById("megabyte");
+const gigabyteUnitInput = document.getElementById("gigabyte");
 
-const convertBytes = (bytes) => ({
-  MB: (bytes / (1000 * 1000)).toFixed(2),
-  GB: (bytes / (1000 * 1000 * 1000)).toFixed(2),
-});
+// conversion
+let updateInput = function () {
+  let bytes = Number(byteUnitInput.value);
+  ((megabyteUnitInput.value = (bytes / (1000 * 1000)).toFixed(2)),
+    (gigabyteUnitInput.value = (bytes / (1000 * 1000 * 1000)).toFixed(2)));
+};
 
-function showResult() {
-
-  if (isNaN(byteUnitInput) || byteUnitInput < 0) {
-    console.log("please enter a valid number");
-    return;
-  }
-  const result = convertBytes(bytes);
-  megabyteInput.textContent(result.MB);
-  gigabyteInput.textContent(result.GB);
+// update ui
+if (byteUnitInput.addEventListener) {
+  byteUnitInput.addEventListener("keyup", function () {
+    updateInput();
+  });
+} else if (updateInput.attachEvent) {
+  byteUnitInput.attachEvent("onkeyup", function () {
+    updateInput();
+  });
 }
-
-showResult();
