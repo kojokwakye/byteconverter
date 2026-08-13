@@ -12,17 +12,84 @@
 
     <div class="form-table">
       <form action="">
-        <div class="byteunit">
-          <input id="byte" type="number" class="unit byte-input" value="0" />
-          <label for="" class="label">bytes</label>
+        <div class="row">
+          <div class="byteunit">
+            <input id="byte1" type="number" class="unit byte-input" />
+            <label class="label">bytes</label>
+          </div>
+          <div class="megabyte">
+            <input id="megabyte1" type="number" class="unit" readonly />
+            <label class="label">megabyte/s</label>
+          </div>
+          <div class="gigabyte">
+            <input id="gigabyte1" type="number" class="unit" readonly />
+            <label class="label">gigabyte/s</label>
+          </div>
         </div>
-        <div class="megabyte">
-          <input id="megabyte" type="number" class="unit megabyteInput" value="0" readonly/>
-          <label for="" class="label">megabyte/S</label>
+
+        <div class="row">
+          <div class="byteunit">
+            <input id="byte2" type="number" class="unit byte-input" />
+            <label class="label">bytes</label>
+          </div>
+          <div class="megabyte">
+            <input id="megabyte2" type="number" class="unit" readonly />
+            <label class="label">megabyte/s</label>
+          </div>
+          <div class="gigabyte">
+            <input id="gigabyte2" type="number" class="unit" readonly />
+            <label class="label">gigabyte/s</label>
+          </div>
         </div>
-        <div class="gigabyte">
-          <input id="gigabyte" type="number" class="unit gigabyteInput" value="0" readonly />
-          <label for="" class="label">gigabyte/S</label>
+
+        <div class="row">
+          <div class="byteunit">
+            <input id="byte3" type="number" class="unit byte-input" />
+            <label class="label">bytes</label>
+          </div>
+          <div class="megabyte">
+            <input id="megabyte3" type="number" class="unit" readonly />
+            <label class="label">megabyte/s</label>
+          </div>
+          <div class="gigabyte">
+            <input id="gigabyte3" type="number" class="unit" readonly />
+            <label class="label">gigabyte/s</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="byteunit">
+            <input id="byte4" type="number" class="unit byte-input" />
+            <label class="label">bytes</label>
+          </div>
+          <div class="megabyte">
+            <input id="megabyte4" type="number" class="unit" readonly />
+            <label class="label">megabyte/s</label>
+          </div>
+          <div class="gigabyte">
+            <input id="gigabyte4" type="number" class="unit" readonly />
+            <label class="label">gigabyte/s</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="byteunit">
+            <input id="byte5" type="number" class="unit byte-input" />
+            <label class="label">bytes</label>
+          </div>
+          <div class="megabyte">
+            <input id="megabyte5" type="number" class="unit" readonly />
+            <label class="label">megabyte/s</label>
+          </div>
+          <div class="gigabyte">
+            <input id="gigabyte5" type="number" class="unit" readonly />
+            <label class="label">gigabyte/s</label>
+          </div>
+        </div>
+        <div class="row total-row">
+          <span class="total-label">Total GB</span>
+          <input id="total-gb" type="number" class="unit" />
+          <button class="refresh" onClick="history.go(0);">refresh</button>
         </div>
       </form>
     </div>

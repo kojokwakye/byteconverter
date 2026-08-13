@@ -1,21 +1,23 @@
-const byteUnitInput = document.getElementById("byte");
-const megabyteUnitInput = document.getElementById("megabyte");
-const gigabyteUnitInput = document.getElementById("gigabyte");
+const rows = document.querySelectorAll(".row:not(.total-row)");
+const totalGbInput = document.getElementById("total-gb");
 
-// conversion
-let updateInput = function () {
-  let bytes = Number(byteUnitInput.value);
-  ((megabyteUnitInput.value = (bytes / (1000 * 1000)).toFixed(2)),
-    (gigabyteUnitInput.value = (bytes / (1000 * 1000 * 1000)).toFixed(2)));
-};
-
-// update ui
-if (byteUnitInput.addEventListener) {
-  byteUnitInput.addEventListener("keyup", function () {
-    updateInput();
+function updateTotal() {
+  let total = 0;
+  document.querySelectorAll(".gigabyte .unit").forEach(function (input) {
+    total += Number(input.value);
   });
-} else if (updateInput.attachEvent) {
-  byteUnitInput.attachEvent("onkeyup", function () {
-    updateInput();
-  });
+  totalGbInput.value = total.toFixed(2);
 }
+
+rows.forEach(function (row) {
+  const byteInput = row.querySelector(".byte-input");
+  const megabyteInput = row.querySelector(".megabyte .unit");
+  const gigabyteInput = row.querySelector(".gigabyte .unit");
+
+  byteInput.addEventListener("keyup", function () {
+    const bytes = Number(byteInput.value);
+    megabyteInput.value = (bytes / (1024 * 1024)).toFixed(2);
+    gigabyteInput.value = (bytes / (1024 * 1024 * 1024)).toFixed(2);
+    updateTotal();
+  });
+});
