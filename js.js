@@ -1,12 +1,19 @@
 const rows = document.querySelectorAll(".row:not(.total-row)");
 const totalGbInput = document.getElementById("total-gb");
+const totalmBInput = document.getElementById("total-mb");
 
 function updateTotal() {
-  let total = 0;
+  let totalgb = 0;
   document.querySelectorAll(".gigabyte .unit").forEach(function (input) {
-    total += Number(input.value);
+    totalgb += Number(input.value);
   });
-  totalGbInput.value = total.toFixed(2);
+  totalGbInput.value = totalgb.toFixed(2);
+
+  let totalmb = 0;
+  document.querySelectorAll(".megabyte .unit").forEach(function (input) {
+    totalmb += Number(input.value);
+  });
+  totalmBInput.value = totalmb.toFixed(2);
 }
 
 rows.forEach(function (row) {

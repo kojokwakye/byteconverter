@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script src="js.js" defer></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon_io/site.webmanifest" />
     <title>byte converter</title>
   </head>
   <body>
@@ -95,9 +113,40 @@
           </div>
         </div>
         <div class="row total-row">
-          <span class="total-label">Total GB</span>
-          <input id="total-gb" type="number" class="unit" />
-          <button class="refresh"><a class="refresh" href="#" onclick="location.href = document.referrer; return false;">refresh</a> </a> </button>
+          <div class="totalmb">
+            <!-- <span class="total-label">Total mB</span> -->
+            <input id="total-mb" type="number" class="unit" readonly />
+            <label class="label">total mb</label>
+          </div>
+          <div class="totalgb">
+            <!-- <span class="total-label">Total GB</span> -->
+            <input id="total-gb" type="number" class="unit" readonly />
+            <label class="label">total gb</label>
+          </div>
+          <!-- <button class="refresh">
+            <a
+              class="refresh"
+              href="#"
+              onclick="
+                location.href = document.referrer;
+                return false;
+              "
+              >refresh</a
+            >
+          </button> -->
+        </div>
+        <div class="refreshbutton">
+          <button class="refresh">
+            <a
+              class="refresh"
+              href="#"
+              onclick="
+                location.href = document.referrer;
+                return false;
+              "
+              >refresh</a
+            >
+          </button>
         </div>
       </form>
     </div>

@@ -89,6 +89,18 @@ span.total-label {
   text-transform: uppercase;
 }
 
+.totalmb,
+.totalgb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.row.total-row {
+  width: 250px;
+}
+
 button.refresh {
   /* color: #ffe; */
   /* font-size: 0.85px; */
