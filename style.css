@@ -69,7 +69,6 @@ form {
   /* border-radius: 4px; */
 }
 
-/* zebra striping so the 5 identical rows are easier to scan */
 .row:nth-of-type(odd) {
   background: rgba(255, 255, 255, 0.05);
 }
@@ -163,7 +162,6 @@ a.refresh svg {
   /* border-radius: 3px; */
 }
 
-/* editable byte inputs: clearly "type here" */
 .byte-input {
   border-color: #ffffff;
   background: #ffffff;
@@ -182,7 +180,6 @@ a.refresh svg {
   font-weight: 400;
 }
 
-/* readonly outputs: visually receding, "computed" look */
 .unit[readonly] {
   opacity: 0.85;
   cursor: not-allowed;
@@ -192,7 +189,6 @@ a.refresh svg {
   font-weight: 400;
 }
 
-/* total row: distinct panel, the visual peak of the page */
 .total-row {
   margin-top: 14px;
   padding: 18px 16px;
