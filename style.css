@@ -12,7 +12,7 @@ body {
   color: #017eb4;
   font-family: "Inter", Arial, sans-serif;
   min-height: 100vh;
-  padding: 40px 20px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,15 +22,15 @@ body {
 .header1 {
   text-align: center;
   font-weight: 800;
-  font-size: 1.9rem;
-  margin-bottom: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #015b85;
 }
 .menubtn {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .menubtn a:hover {
@@ -46,8 +46,9 @@ body {
 
 .form-table {
   background: linear-gradient(140deg, #017eb4 0, #27aace 100%);
-  padding: 40px 30px;
-  max-width: 900px;
+  padding: 24px 20px;
+  max-width: 560px;
+  width: 100%;
   margin: 0 auto;
   box-shadow: 0 8px 30px rgba(1, 60, 87, 0.35);
 }
@@ -55,7 +56,7 @@ body {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   align-items: center;
 }
 
@@ -63,9 +64,9 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   width: 100%;
-  padding: 6px 10px;
+  padding: 4px 8px;
   /* border-radius: 4px; */
 }
 
@@ -84,7 +85,7 @@ form {
 }
 
 .label {
-  font-size: 0.9em;
+  font-size: 0.75em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -109,8 +110,8 @@ button.refresh {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  padding: 13px 28px;
-  font-size: 0.9rem;
+  padding: 9px 20px;
+  font-size: 0.8rem;
   background: linear-gradient(135deg, #3caace, #11769a);
   border: none;
   /* border-radius: 4px; */
@@ -123,16 +124,16 @@ button.refresh {
 
 button.refresh:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(255, 122, 61, 0.5);
+  box-shadow: 0 6px 18px rgba(17, 118, 154, 0.5);
 }
 
 button.refresh:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(255, 122, 61, 0.4);
+  box-shadow: 0 2px 8px rgba(17, 118, 154, 0.4);
 }
 
 .refreshbutton {
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 a.refresh {
@@ -150,8 +151,8 @@ a.refresh svg {
 
 .unit {
   width: 100%;
-  padding: 12px 10px;
-  font-size: 1.05rem;
+  padding: 8px 6px;
+  font-size: 0.9rem;
   font-family: "Space Mono", monospace;
   font-variant-numeric: tabular-nums;
   border: 2px solid #017eb4;
@@ -190,14 +191,14 @@ a.refresh svg {
 }
 
 .total-row {
-  margin-top: 14px;
-  padding: 18px 16px;
+  margin-top: 8px;
+  padding: 12px 10px;
   background: rgb(2 41 59 / 12%);
   /* border-radius: 6px; */
 }
 
 .total-row .unit {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
   background: rgba(255, 255, 255, 0.95);
   color: #015b85;
