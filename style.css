@@ -85,7 +85,7 @@ form {
 }
 
 .label {
-  font-size: 0.7rem;
+  font-size: 1em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -209,7 +209,7 @@ a.refresh svg {
 }
 
 .total-row .label {
-  font-size: 0.78rem;
+  font-size: 1em;
   letter-spacing: 2px;
   /* color: #ffe9c7; */
   font-weight: 800;
