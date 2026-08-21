@@ -85,7 +85,7 @@ form {
 }
 
 .label {
-  font-size: 1em;
+  font-size: 0.7em;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -196,7 +196,7 @@ a.refresh svg {
 .total-row {
   margin-top: 14px;
   padding: 18px 16px;
-  background: rgba(2, 41, 59, 0.35);
+  background: rgb(2 41 59 / 12%);
   /* border-radius: 6px; */
 }
 
@@ -209,7 +209,7 @@ a.refresh svg {
 }
 
 .total-row .label {
-  font-size: 1em;
+  font-size: 0.8em;
   letter-spacing: 2px;
   /* color: #ffe9c7; */
   font-weight: 800;
